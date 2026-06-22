@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>加拿大28 简明指南与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f5f7fc;
+            color: #1f2a3f;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(145deg, #0c1a2b 0%, #1b2d44 100%);
+            color: #eef2f7;
+            padding: 4rem 1.5rem 3.8rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(99, 150, 220, 0.12), transparent 70%);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0.8rem;
+        }
+        .hero .sub {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            font-weight: 350;
+            max-width: 640px;
+            margin: 0 auto 0.2rem;
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1.2rem;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #316b9c;
+            color: white;
+            font-size: 0.8rem;
+            padding: 0.2rem 1.1rem;
+            border-radius: 30px;
+            letter-spacing: 0.3px;
+            margin-top: 0.8rem;
+            position: relative;
+            z-index: 1;
+            opacity: 0.85;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .intro-section {
+            background: #ffffff;
+            padding: 2.8rem 0 1.8rem;
+            border-bottom: 1px solid #e3e9f2;
+        }
+        .intro-section .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            justify-content: center;
+        }
+        .card {
+            background: #f9faff;
+            border-radius: 24px;
+            padding: 1.8rem 1.6rem;
+            flex: 1 1 240px;
+            max-width: 320px;
+            box-shadow: 0 4px 12px rgba(0, 20, 40, 0.03);
+            border: 1px solid #eaedf5;
+            transition: 0.2s ease;
+        }
+        .card:hover {
+            border-color: #acaada;
+            box-shadow: 0 8px 18px rgba(30, 60, 100, 0.05);
+            transform: translateY(-2px);
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 550;
+            margin-bottom: 0.6rem;
+            color: #124263;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .card p {
+            color: #2f3c55;
+            font-size: 0.95rem;
+        }
+        .card .emph-num {
+            display: inline-block;
+            background: #dce5f2;
+            border-radius: 40px;
+            padding: 0 0.7rem;
+            font-size: 0.8rem;
+            color: #1f3b5d;
+            font-weight: 500;
+            margin-right: 0.4rem;
+        }
+        .story-block {
+            padding: 3rem 0 2.8rem;
+            background: #ffffff;
+        }
+        .story-block h2 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #0e273e;
+            margin-bottom: 1.2rem;
+            border-left: 5px solid #4178ae;
+            padding-left: 1.2rem;
+        }
+        .story-block p {
+            margin-bottom: 1rem;
+            color: #233652;
+        }
+        .story-block .insight {
+            background: #edf2f9;
+            padding: 1.2rem 1.8rem;
+            border-radius: 40px 12px 40px 12px;
+            margin: 1.6rem 0 1rem;
+            font-style: normal;
+            font-weight: 400;
+            border-left: 3px solid #648ab6;
+        }
+        .scenario-section {
+            padding: 2.4rem 0;
+            background: #f2f5fc;
+        }
+        .scenario-section .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .scenario-box {
+            background: white;
+            border-radius: 28px;
+            padding: 1.6rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        .scenario-box h3 {
+            font-weight: 550;
+            color: #124263;
+            border-bottom: 1px dashed #ccd9ea;
+            padding-bottom: 0.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .scenario-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .scenario-box ul li {
+            padding: 0.3rem 0 0.3rem 1.2rem;
+            position: relative;
+            color: #2e405f;
+            font-size: 0.95rem;
+        }
+        .scenario-box ul li::before {
+            content: '▹';
+            color: #3f6d9c;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .faq-summary {
+            padding: 2.6rem 0;
+            background: #ffffff;
+        }
+        .faq-summary h2 {
+            font-size: 1.4rem;
+            font-weight: 550;
+            margin-bottom: 1.2rem;
+            color: #102b40;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e2e9f3;
+            padding: 0.9rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #1f3f5e;
+            margin-bottom: 0.15rem;
+        }
+        .faq-item p {
+            color: #2f476b;
+            font-size: 0.95rem;
+        }
+        .access-reminder {
+            background: #eaeef6;
+            padding: 2.8rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid #d9e1ee;
+        }
+        .access-reminder p {
+            max-width: 680px;
+            margin: 0 auto 0.3rem;
+            font-size: 1.05rem;
+            color: #1c314b;
+        }
+        .access-reminder .primary-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: #134a78;
+            background: #ffffff;
+            padding: 0.4rem 1.4rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #b2cae3;
+            transition: 0.15s;
+        }
+        .access-reminder .primary-link:hover {
+            background: #e3edfa;
+            border-color: #3f72a8;
+        }
+        footer {
+            background: #101f30;
+            color: #b6c9de;
+            text-align: center;
+            padding: 1.6rem 1rem;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 2.1rem; }
+            .scenario-section .grid-2 { grid-template-columns: 1fr; gap: 1.4rem; }
+            .card { max-width: 100%; flex: 1 1 100%; }
+        }
+        .link-inline {
+            color: #1f5f93;
+            text-decoration: underline;
+            text-underline-offset: 0.15em;
+            font-weight: 500;
+        }
+        .link-inline:hover {
+            color: #083358;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>加拿大28 · 简明路径</h1>
+    <div class="sub">平台背景 · 访问指引 · 理性信息</div>
+    <div class="badge">实用指南 / 非官方介绍</div>
+</section>
+
+<section class="intro-section">
+    <div class="container">
+        <div class="card-grid">
+            <div class="card">
+                <h3><span class="emph-num">01</span> 基础认知</h3>
+                <p>数字组合与开奖逻辑的背后，是一套成熟且透明的规则体系。了解基本参数是参与前的重要前提——不盲从，先审视。</p>
+            </div>
+            <div class="card">
+                <h3><span class="emph-num">02</span> 信息来源</h3>
+                <p>所有实时数据与走势均以官方平台为准。建议用户直接通过 <a href="https://cn-zh-ca28.com" class="link-inline">加拿大28</a> 对照最新状态，避免中间渠道的误差。</p>
+            </div>
+            <div class="card">
+                <h3><span class="emph-num">03</span> 访问备忘</h3>
+                <p>由于网络环境变动，部分区域可能遇到连接限制。使用稳定浏览器与直连方式可提高访问效率，同时注意保护个人账户安全。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="story-block">
+    <div class="container">
+        <h2>从背景到日常</h2>
+        <p>加拿大28 的机制根植于统计学与随机数生成，其开奖频率与数值分布具有可观测的规律性。许多长期使用者将其视为观察概率的练习，而非简单的投机工具。清晰的认知是理性参与的第一道门槛。</p>
+        <p>平台经过多次迭代，当前界面与数据透明度已显著提升。对于刚接触的访客，建议花十分钟熟悉走势图的坐标含义与常用筛选条件，这能大幅减少初期的无用操作。</p>
+        <div class="insight">
+            ★ 一个常见建议：在开始任何策略前，先连续观察至少20期走势——不要急于操作，只记录数据。这个过程能帮你建立对波动的真实体感。
+        </div>
+        <p>另外，注意不同时间段的数据负载差异。高峰时段（如晚间 20:00–23:00）页面请求量较大，偶有延迟属于正常现象。保持耐心，或者选择低峰时段浏览效率更高。</p>
+    </div>
+</section>
+
+<section class="scenario-section">
+    <div class="container">
+        <div class="grid-2">
+            <div class="scenario-box">
+                <h3>典型使用场景</h3>
+                <ul>
+                    <li>日常查看开奖结果与历史统计</li>
+                    <li>对比不同周期的频率分布</li>
+                    <li>结合个人观察做简单趋势参考</li>
+                    <li>移动端快速确认最新号码</li>
+                </ul>
+            </div>
+            <div class="scenario-box">
+                <h3>访问注意事项</h3>
+                <ul>
+                    <li>优先使用 Chrome / Edge 最新版本</li>
+                    <li>避免通过来路不明的镜像站访问</li>
+                    <li>定期清除缓存减少页面加载异常</li>
+                    <li>若遇到证书警告请立即退出</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-summary">
+    <div class="container">
+        <h2>常见疑问摘要</h2>
+        <div class="faq-item">
+            <strong>是否需要注册才能查看数据？</strong>
+            <p>基础开奖结果与走势图无需登录即可浏览。部分高级筛选或设置选项可能要求轻量注册，但核心信息保持开放。</p>
+        </div>
+        <div class="faq-item">
+            <strong>网站有时无法加载怎么办？</strong>
+            <p>可尝试刷新、更换网络环境或使用浏览器无痕模式。如果持续失败，建议直接访问 <a href="https://cn-zh-ca28.com" class="link-inline">加拿大28</a> 确认是否进行过域名调整。</p>
+        </div>
+        <div class="faq-item">
+            <strong>走势图的更新频率是多少？</strong>
+            <p>每期开奖后数据会实时同步至图表，一般延迟不超过数秒。长周期统计图表每小时重新计算一次。</p>
+        </div>
+    </div>
+</section>
+
+<section class="access-reminder">
+    <div class="container">
+        <p>本页为第三方信息整合，仅作介绍与提醒用途。<br>所有官方数据与权威解释均以平台自身发布为准。</p>
+        <a href="https://cn-zh-ca28.com" class="primary-link">加拿大28</a>
+        <p style="margin-top: 0.8rem; font-size: 0.9rem; opacity: 0.8;">访问前请确认您处于合规的网络环境中</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 · 杂志专题式介绍 · 内容仅供参考 · 不构成任何建议
+</footer>
+</body>
+</html>
